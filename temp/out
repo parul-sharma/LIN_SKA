@@ -1,0 +1,4 @@
+Subject	Kmers unique to Query	Kmers unique to Subject	Matches	% kmers in Query matching	% kmers in Subject matching	SNPs	%ID of matching kmers	%ID of Query kmers	%ID of Subject kmers	Ns in Query	Ns in Subject	Ns in both
+SRR1206159	2178	4028	2899458	99.9249	99.8613	62	99.9979	99.9228	99.8591	1	4	126
+SRR1393979	2768	5392	2898868	99.9046	99.8143	78	99.9973	99.9019	99.8117	0	7	127
+SRR1534987	745	2286	2900891	99.9743	99.9213	10	99.9997	99.974	99.9209	1	3	126
