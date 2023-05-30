@@ -1,0 +1,18 @@
+#!/bin/bash
+##usage: ./compare_genomes path/to/database path/to/new/genome.fasta
+##input file should be fasta
+#cd /work/cascades/parulsharma/LINbase_genomes/outbreaks/Listeria-monocytogenes/LIN_SKA
+
+dir=$1
+new_genome=$2
+
+genome_name="$(basename -s .fasta $new_genome)"
+cd $dir
+
+#####adding genome to database
+#step1: create the skf fille
+mkdir $dir/../temp
+ska fasta $new_genome -o $dir/../temp/$genome_name
+
+#step:2 compare new skf file with files in database
+ska compare $dir/* -q $dir/../temp/${genome_name}.skf > $dir/../temp/out  
